@@ -1,0 +1,30 @@
+* {
+  font-family: "Popins", sans-serif;
+}
+
+.modalPrimary {
+  display: none;
+  position: absolute;
+  left: 45rem;
+  top: 15rem;
+}
+
+.modal {
+  display: grid;
+  width: 600px;
+  height: 300px;
+  background-color: blue;
+}
+
+input {
+  font-size: 18px;
+  width: 500px;
+  border: solid 1px var(#9c9ab6);
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}

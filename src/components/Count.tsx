@@ -3,6 +3,7 @@ import Top from "../assets/top-image.png";
 import Bottom from "../assets/bottom-image.png";
 import Rocket from "../assets/rocket.png";
 import "./Count.css";
+import { Modal } from "./Modal";
 
 export function Count() {
   return (
@@ -13,10 +14,12 @@ export function Count() {
       <body>
         <div className="container2">
           <div className="container3">
-            <h1> 08: 12: 44: 28</h1>
+            <h1 className="titulo">Pronto para lançar em...</h1>
+            <h1 className="number"> 08: 12: 44: 28</h1>
             <p>inscreva-se para saber mais sobre o lançamento</p>
             <button>Inscreva-se</button>
           </div>
+          <Modal />
 
           <img className="rocket" src={Rocket} alt="foguete" />
         </div>

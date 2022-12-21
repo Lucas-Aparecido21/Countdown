@@ -4,11 +4,61 @@
   padding: 0;
   box-sizing: border-box;
 }
+header img {
+  width: 100%;
+}
+
+footer img {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.container {
+  width: 100vw;
+
+  position: relative;
+}
 
 .container2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "area1 area2";
+  justify-content: space-between;
+}
+
+.container3 {
+  width: 100%;
+  display: grid;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container3 button {
+  background-color: var(--purple);
+  width: 12rem;
+  color: white;
+  border-style: none;
+  border-radius: 1rem;
+  height: 3.5rem;
+  justify-self: center;
+}
+
+.container3 p {
+  justify-self: center;
+
+  font-weight: 100;
+  color: #9c9ab6;
+}
+.titulo {
+  justify-self: center;
+  color: var(--purple);
+}
+.number {
+  font-size: 5rem;
+  justify-self: center;
+  color: #4d4c59;
+  font-weight: 300;
 }
 .teste {
   grid-area: area1;
@@ -16,6 +66,7 @@
 
 .rocket {
   grid-area: area2;
-  width: 520px;
-  margin-top: 20px;
+  width: 565px;
+  height: 400px;
+  justify-self: center;
 }
