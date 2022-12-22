@@ -3,20 +3,21 @@
 }
 
 .modalPrimary {
-  display: flex;
+  display: none;
   width: 500px;
   height: 300px;
-  left: 450px;
+  justify-self: center;
   top: 200px;
   position: absolute;
 }
 
 .modal {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #c8c8c8;
+  background-color: white;
+  border: solid 1px black;
   border-radius: 10px;
 }
 
@@ -57,19 +58,6 @@ input::placeholder {
 
 .confirmar:hover {
   background-color: #7a73fa;
-}
-
-.voltar {
-  align-self: center;
-  width: 50%;
-  height: 35px;
-  background-color: var(--text-base);
-  border-radius: 8px;
-  border: solid 1px black;
-}
-
-.voltar:hover {
-  background-color: #d3d2d2;
 }
 
 .botoes {

@@ -1,11 +1,20 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 import "./Modal.css";
 
-export function Modal() {
+interface Open {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export function Modal({ isOpen }: Open) {
   return (
     <>
-      <div id="modalPrincipal" className="modalPrimary">
+      <div
+        id="modalPrincipal"
+        className="modalPrimary"
+        style={{ display: isOpen ? "flex" : "none" }}
+      >
         <div className="modal">
           <div className="modal-content">
             <div className="nameModal">
@@ -15,8 +24,13 @@ export function Modal() {
               <input type="text" placeholder="email@email.com.br"></input>
             </div>
             <div className="botoes">
-              <button className="voltar">Voltar</button>
-              <button className="confirmar">Confirmar</button>
+              <button
+                className="confirmar"
+                type="submit"
+                onClick={() => setIsOpen(false)}
+              >
+                Confirmar
+              </button>
             </div>
           </div>
         </div>
