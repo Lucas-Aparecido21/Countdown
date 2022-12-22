@@ -3,28 +3,77 @@
 }
 
 .modalPrimary {
-  display: none;
+  display: flex;
+  width: 500px;
+  height: 300px;
+  left: 450px;
+  top: 200px;
   position: absolute;
-  left: 45rem;
-  top: 15rem;
 }
 
 .modal {
-  display: grid;
-  width: 600px;
-  height: 300px;
-  background-color: blue;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #c8c8c8;
+  border-radius: 10px;
+}
+
+.emailModal {
+  padding: 0 0 0.8rem;
+}
+
+.nameModal {
+  padding: 0 0 0.8rem;
 }
 
 input {
-  font-size: 18px;
-  width: 500px;
-  border: solid 1px var(#9c9ab6);
+  background-color: var(--purple);
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px var(--text-base);
+  width: 20rem;
+  font-family: "Popins", sans-serif;
+  font-weight: 500;
+  height: 2.75rem;
+  font-size: 14px;
+  color: white;
+  padding: 0 0.8rem 0;
+  border: none;
+}
+input::placeholder {
+  color: white;
 }
 
-.modal-content {
+.confirmar {
+  align-self: center;
+  width: 50%;
+  height: 35px;
+  background-color: var(--purple);
+  border-radius: 8px;
+  border: solid 1px black;
+  color: white;
+}
+
+.confirmar:hover {
+  background-color: #7a73fa;
+}
+
+.voltar {
+  align-self: center;
+  width: 50%;
+  height: 35px;
+  background-color: var(--text-base);
+  border-radius: 8px;
+  border: solid 1px black;
+}
+
+.voltar:hover {
+  background-color: #d3d2d2;
+}
+
+.botoes {
+  width: 100%;
+  gap: 0.5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
 }
