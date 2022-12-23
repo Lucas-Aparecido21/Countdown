@@ -23,7 +23,7 @@ export function Count() {
               Inscreva-se
             </button>
           </div>
-          <Modal isOpen />
+          <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
 
           <img className="rocket" src={Rocket} alt="foguete" />
         </div>

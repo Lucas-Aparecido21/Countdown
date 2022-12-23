@@ -7,7 +7,7 @@ interface Open {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export function Modal({ isOpen }: Open) {
+export function Modal({ isOpen, setIsOpen }: Open) {
   return (
     <>
       <div
@@ -26,7 +26,7 @@ export function Modal({ isOpen }: Open) {
             <div className="botoes">
               <button
                 className="confirmar"
-                type="submit"
+                type="button"
                 onClick={() => setIsOpen(false)}
               >
                 Confirmar
