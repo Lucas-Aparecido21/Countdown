@@ -4,8 +4,8 @@
 
 .modalPrimary {
   display: none;
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 400px;
   justify-self: center;
   top: 200px;
   position: absolute;
@@ -33,27 +33,30 @@ input {
   background-color: var(--purple);
   border-radius: 5px;
   box-shadow: 0 0 0 2px var(--text-base);
-  width: 20rem;
+  width: 30rem;
   font-family: "Popins", sans-serif;
   font-weight: 500;
-  height: 2.75rem;
-  font-size: 14px;
+  height: 3.5rem;
+  font-size: 18px;
   color: white;
   padding: 0 0.8rem 0;
   border: none;
+  font-weight: 300;
 }
 input::placeholder {
-  color: white;
+  color: rgb(212, 212, 212);
 }
 
 .confirmar {
   align-self: center;
   width: 50%;
-  height: 35px;
+  height: 3rem;
   background-color: var(--purple);
   border-radius: 8px;
   border: solid 1px black;
   color: white;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .confirmar:hover {
@@ -64,4 +67,25 @@ input::placeholder {
   width: 100%;
   gap: 0.5rem;
   display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.divFechar {
+  width: 100%;
+  position: absolute;
+  justify-content: flex-end;
+  display: flex;
+  margin-top: -19rem;
+  align-items: end;
+  left: -22px;
+}
+
+.fechar {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  height: 2rem;
 }
