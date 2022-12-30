@@ -6,26 +6,18 @@ import "./Count.css";
 import { Modal } from "./Modal";
 
 export function Count() {
-  // const totals: number = 55;
-  // const totalm: number = 5000;
-  // let totalh: number = 2255442;
-  // let totald: number = 2;
-
   const [isOpen, setIsOpen] = useState(false);
-  const [seconds, setSeconds] = useState(10);
-  const [minutes, setMinutes] = useState(10);
-  const [hours, setHours] = useState(10);
-  const [days, setDays] = useState(10);
+  const [segundos, setSegundos] = useState(10);
+  const [minutos, setMinutos] = useState(2);
+  const [horas, setHoras] = useState(1);
+  const [dias, setDias] = useState(1);
+  // React.useEffect(() => {
+  //   setInterval(() => setSegundos((cont) => cont - 1), 1000);
+  // }, []);
 
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [seconds, setSeconds] = useState(Math.floor(totals / 1000) % 60);
-  // const [minutes, setMinutes] = useState(Math.floor(totalm / 1000 / 60) % 60);
-  // const [hours, setHours] = useState(
-  //   Math.floor((totalh / 1000) * 60 * 60) % 24
-  // );
-  // const [days, setDays] = useState(10);
-
-  // function SetSeconds(value: number) {}
+  if (segundos === 0) {
+    setMinutos(minutos - 1);
+  }
 
   return (
     <div className="container">
@@ -37,9 +29,9 @@ export function Count() {
           <div className="container3">
             <h1 className="titulo">Pronto para lançar em...</h1>
             <h1 className="number">
-              {days}: {hours}: {minutes}: {seconds}
+              {dias}:{horas}:{minutos}:{segundos}
             </h1>
-            <p> Dias Horas Minutos Segundos</p>
+            <p> Dias {"     "} Horas Minutos Segundos</p>
             <p>inscreva-se para saber mais sobre o lançamento</p>
             <button type="button" onClick={() => setIsOpen(true)}>
               Inscreva-se
