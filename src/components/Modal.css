@@ -57,6 +57,7 @@ input::placeholder {
   color: white;
   font-size: 18px;
   font-weight: 300;
+  cursor: pointer;
 }
 
 .confirmar:hover {
